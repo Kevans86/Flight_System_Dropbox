@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+:root {
+
+  --collapse-on:500px
+}
+
+
+#card {
+  margin-top: 20px;  
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  width: 100%;
+  max-width: var(--collapse-on);
+
+  border-radius: 25px;
+  position: relative;
+  overflow: visible;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+
+}
+
+#card h2 {
+  color: white;
+}
+
+#card #title {
+  padding-bottom: 20px;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+#img-avatar {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;    
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    top: 5px;
+    left: 125px;
+}
+
+#card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+
+#portada {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url("https://images.pexels.com/photos/163792/model-planes-airplanes-miniatur-wunderland-hamburg-163792.jpeg?cs=srgb&dl=pexels-pixabay-163792.jpg&fm=jpg");
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+
+#input-fileds {
+    display: flex;
+    padding-top:3em ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+ #form-type{
+    padding-bottom: 20px;
+    font-size: 120%;
+    word-wrap: break-word;
+}
+
+/*Inputs formatting */
+
+.form-input {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 20px ;
+    width: 90%;
+    
+ } 
+
+
+
+ .form-input::placeholder{
+    font-style: italic;
+ }
+
+  #form-errors{
+    margin-top: 20px;
+  }
+
+.select-dropdown{
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 90%;
+}
+
+
+.select-dropdown-placeholder {
+     font-style: italic;
+}
+
+
+
+/*########################################
+          file upload field
+######################################## */
+
+
+#file-upload-label{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  border: #16a085;
+  border-width: 5px;
+  border-style:dashed ;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+
+
+}
+
+
+#file-upload-label:active  {
+
+  transform: translateY(4px);
+}
+
+#file-upload-label:hover{
+  filter: brightness(120%)
+}
+#photo-icon {
+  color: white;
+  font-size: 150%;
+}
+
+#selected-file{
+  text-overflow: ellipsis
+}
+
+#file-input {
+width: 80%;
+display: none;
+
+}
+
+
+
+#clear-label {
+  color:red;
+  font-style: oblique;
+  border: red;
+  border-width: 5px;
+  border-style:dashed ;
+  width: 90%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+#clear-label:active   {
+  transform: translateY(4px);
+
+}
+
+/*########################################*/
+
+/*********************** date time picker *************************/
+
+.date-time-picker {
+
+  height: 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 20px ;
+  width: 90%;
+  text-align: center;
+
+}
+.date-time-picker .date-input-dep, .date-time-picker .date-input-arr {
+    width: 50%;
+    height: 40px ; 
+    text-align: left;
+   
+}
+.date-time-picker .date-input-time{
+  width: 50%;
+  height: 40px ; 
+}
+
+.date-time-picker .date-input-dep {
+  margin-bottom: 20px ;
+}
+/************************************************************************/
+
+.new-flight-label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#form-input-number {
+  width: 60%;
+}
+
+
+/* ******************** buttons ************************/
+
+#clear-button , #submit-button, #reset-password-button, #setBack-button {
+  cursor: pointer;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+#submit-button  {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    height: 40px;  
+    width: 60%;
+    background-color: #c2fbd7;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(33, 65, 33);
+    display: inline-block;
+    padding: 7px 20px;
+   
+      
+    }
+    
+#submit-button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) ;
+  width: 80%;
+}
+
+
+#clear-button {
+  position:absolute;
+  width: 20%;
+  height: 45px;  
+  bottom: 0px;
+  right: 0px;
+  background-color: #f71703;
+  border-radius: 25px 0px 25px 0px; 
+  box-shadow: rgba(187, 87, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 87, 44, 0.2) 0 1px 2px,rgba(187, 87, 44, 0.2) 0 2px 4px,rgba(187, 87, 44, 0.2) 0 4px 8px,rgba(187, 87, 44, 0.2) 0 8px 16px,rgba(187, 87, 44, 0.2) 0 16px 32px;
+  color: rgb(65, 39, 33);
+  cursor: pointer;
+}
+
+#clear-button:hover {
+  box-shadow: rgba(187, 87, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 87, 44, 0.2) 0 1px 2px,rgba(187, 87, 44, 0.2) 0 2px 4px,rgba(187, 87, 44, 0.2) 0 4px 8px,rgba(187, 87, 44, 0.2) 0 8px 16px,rgba(187, 87, 44, 0.2) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+#reset-password-button , #setBack-button {
+  position:absolute;
+  width: 85px;
+  height: 55px;  
+  white-space: normal;
+  top: 0px;
+  right: 0px;
+  border-radius: 0px 25px 0px 30px;
+  cursor: pointer;
+  }
+  
+
+
+#reset-password-button {
+  color: rgb(60, 65, 33);
+  background-color: #e3f703;
+  box-shadow: rgba(177, 187, 44, 0.2) 0 -25px 18px -14px inset,rgba(177, 187, 44, 0.2) 0 1px 2px,rgba(177, 187, 44, 0.2) 0 2px 4px,rgba(177, 187, 44, 0.2) 0 4px 8px,rgba(177, 187, 44, 0.2) 0 8px 16px,rgba(177, 187, 44, 0.2) 0 16px 32px;    
+  }
+
+#reset-password-button:hover {
+    box-shadow: rgba(177, 187, 44, 0.2) 0 -25px 18px -14px inset,rgba(177, 187, 44, 0.2) 0 1px 2px,rgba(177, 187, 44, 0.2) 0 2px 4px,rgba(177, 187, 44, 0.2) 0 4px 8px,rgba(177, 187, 44, 0.2) 0 8px 16px,rgba(177, 187, 44, 0.2) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+  
+#setBack-button {
+  color: white;
+  background-color: #0275d8 ;
+  box-shadow: rgba(44, 51, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 51, 187, 0.2)  0 1px 2px,rgba(44, 51, 187, 0.2)  0 2px 4px rgba(44, 51, 187, 0.2) 0 4px 8px,rgba(44, 51, 187, 0.2) 0 8px 16px,rgba(44, 51, 187, 0.2) 0 16px 32px; 
+  
+  }
+
+  
+#setBack-button:hover {
+  box-shadow: rgba(44, 46, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 46, 187, 0.2) 0 1px 2px,rgba(44, 46, 187, 0.2) 0 2px 4px,rgba(44, 46, 187, 0.2) 0 4px 8px,rgba(44, 46, 187, 0.2)0 8px 16px,rgba(44, 46, 187, 0.2)0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

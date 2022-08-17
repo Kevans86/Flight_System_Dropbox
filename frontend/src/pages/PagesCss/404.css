@@ -1,0 +1,91 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+.wrapper-404 {
+ position: fixed;
+ top: 0px;
+ bottom: 0px;
+ right: 0px;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background: #eee;
+}
+
+.wrapper-404 .text_group .text_404 {
+  font-family: "Comic Neue", cursive;
+  font-size: 10em;
+  box-sizing: border-box;
+  color: #363636;
+}
+.wrapper-404 .text_group .text_lost {
+  font-family: "Comic Neue", cursive;
+  font-size: 2em;
+  line-height: 50px;
+  box-sizing: border-box;
+  color: #565656;
+}
+.wrapper-404 .window_group .window_404 {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  border-radius: 100px;
+  box-shadow: -3px -3px 0px 5px #d4d4d4, 5px 5px 0px 2px white;
+  background: linear-gradient(310deg, #020024 0%, #09096b 0%, black 80%);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+#clouds{
+    position:absolute;
+    top: -20%;
+    animation: bannermove 20s linear infinite;
+    }
+
+
+
+@keyframes bannermove {
+    0% {margin-left: -1210px;}
+    100% {margin-left:-100px;}
+      }
+
+
+@media only screen and (min-width: 1080px) {
+  .wrapper-404 .text_group {
+    flex: 0 0 30%;
+    margin-left: 25%;
+    align-items: flex-end;
+  }
+  .wrapper-404 .window_group {
+    flex: 1 0 40%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 1079px) {
+  .wrapper-404 .text_group {
+    flex: 0 0 100%;
+    margin: 0;
+    align-items: center;
+  }
+  .wrapper-404 .text_group .text_lost {
+    width: 100%;
+    padding: 0 22px;
+    font-size: 1.7em;
+    line-height: 35px;
+  }
+  .wrapper-404 .window_group {
+    flex: 0 0 100%;
+  }
+  .wrapper-404 .window_group .window_404 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+}

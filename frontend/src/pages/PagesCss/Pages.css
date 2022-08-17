@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+  .flights-header{
+    display: flex ;
+    justify-content: center
+}
+
+.flights-header .flights-title {
+    margin-bottom: 2vw ;
+     
+}
+
+
+/****************************************** pagination ***********************************/
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+
+.pagination {
+  justify-content:center;
+  align-items:center;
+  /* border: 1px solid black; */
+  /* background-color: white; */
+  border-radius: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  /* width: 50%; */
+
+}
+
+
+.pagination a {
+  border: 2px solid black; 
+  margin: 0 0.5vw;
+  color:white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 50px;
+  
+}
+
+
+.hidden-back{
+/* display: none; */
+visibility: hidden;
+}
+.hidden-next{
+  /* display: none; */
+  visibility: hidden;
+  
+}
+
+.pagination .btn.btn-outline-info {
+  color:black;
+  box-shadow: none;
+  border: 2px solid black; 
+}
+
+
+.pagination .btn.btn-outline-info:hover {
+  color:rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+
+}
+
+
+.pagination li.selected a , 
+  .pagination li.selected a:hover ,
+    .pagination a:hover:not(.active)  {
+  background-color: #000000;
+  color:rgb(255, 255, 255)
+}
+
+
+.pagination a:not(.active){
+  background-color: white;
+}
+
+
+
+
+/*##################################################*/
+/*#################Viewpages#################*/
+/*##################################################*/
+
+.admin-label-center, .airline-label-center{
+  display: flex;
+  justify-content: center;
+
+}
+.admin-label-display, .airline-label-display {
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  background-color: white;
+  border: 5px solid rgb(216, 204, 204);
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+#user-search-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+} 
+
+#label-positioning {
+  display: flex;
+  justify-content: center;
+}
+
+#after-search-label {
+font-size: xx-large;
+
+}
+
+
+.btn-group {
+
+  width: 100%;
+
+}
+
+#searched-for-container, #center-flightcard  {
+  display: flex;
+  justify-content: center;
+}
+#searched-for-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+
+
+/*##################################################*/
+/*#################Admin Pages######################*/
+/*##################################################*/
+
+
+.title-label-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.customers-label, .admins-label, .airline-flights-label, .admin-airline-label, .users-label{
+  display: block;
+  font-size: 30px;
+  padding: 5px 20px 5px 20px;
+  font-weight: bold;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.admin-search-container, .airline-search-container{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  border-radius: 10px;
+  
+}
+
+.admin-search-form, .airline-search-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  padding: 15px 15px 15px 15px;
+
+}
+
+
+.admin-select, .airline-select { 
+  width: 80%;
+  font-size: larger;
+}
+
+#admin-search-btn, #airline-search-btn, #user-search-btn {
+  width: 20%;
+  height: 45px;
+  font-size: larger;
+
+}
+  
+#admin-clear-btn, #airline-clear-btn{
+width: 100%;
+font-size: larger;
+border-radius: 0px 0px 10px 10px;
+
+}

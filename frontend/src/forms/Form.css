@@ -1,0 +1,186 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+
+
+/* ########################################################## */
+/*                       LOGIN / REGISTER                     */
+/* ########################################################## */
+
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label {
+    text-align: left;
+    display: block;
+}
+
+
+.create h2 {
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.create input , .create textarea, .fancy-select {
+    width: 100%;
+    padding: 6px, 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    color: black;
+
+
+}
+
+.create button{
+    background: red;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-roboto);
+    background-color: #212426;
+
+}
+
+
+.create span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.create input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+.create input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+
+
+/* ########################################################## */
+/*                     FLIGHT SEARCH                          */
+/* ########################################################## */
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 5px 20px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    font: 1em cursive;
+
+}
+
+.country-input-container {
+    height: 40px;
+    width: 20%;
+    background-color:transparent;
+    
+    
+   }
+
+
+.country-input-container .country-input__control{
+    border: 2px solid white;
+    border-radius: 4px;
+    height: 40px;
+    box-shadow: none;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+
+.country-input-container .country-input__control:hover{
+    border-color: rgba(255, 255, 0, 0.8);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(218, 205, 12, 0.97);
+    outline: 0 none;
+}
+
+
+
+/*************** date picker ********************/
+
+/*main container*/
+.date-picker {
+    width: 40%;
+    background-color: transparent;
+    border: none;
+   }
+
+   
+.date-input-dep, .date-input-arr {
+    width: 49%;
+    height: 40px ; 
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: none;
+    text-align: left;
+    /* font-size: 14px; */
+   }
+
+ .date-picker .date-input-dep {
+    margin-right: 2%;
+   } 
+
+
+/* ************************************* */
+
+
+.search-button {
+    width: 15% ;
+    height: 40px ;
+    border-radius: 4px;
+
+    background: #f0d658;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-button .search-icon {
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+}
+
+
+ .search-container .search-button:hover {
+    filter: brightness(1.2);
+  }
+ 
+
+
+@media (max-width: 800px) {
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 10px 10px 10px 10px;
+    }
+    .country-input-container,  .date-picker , .date-input-arr, .date-input-dep {
+        width: 100%;
+        margin-bottom: 13px; 
+    }
+
+    .search-button {
+        width: 100%;
+
+    } 
+
+}
+

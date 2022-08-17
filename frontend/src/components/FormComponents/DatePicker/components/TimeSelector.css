@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+
+.time-picker-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+    width: 100%;
+}
+
+
+.departure-time, .arrival-time {
+    display: flex;
+    position: relative;
+    justify-content:center;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.time-splitter {
+    width: 10%;
+}
+
+.hour-column, .min-column {
+    width: 30%;
+}
+
+.show-date-label {
+    /* font-size: 3rem; */
+    border: 1px solid black;
+    background-color: rgb(17, 98, 237);
+    font-size:1rem;
+    color: white;
+}
+
+.show-date-label-day {
+font-size: 2rem;
+
+}
+
+.time-menu  {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+}
+
+.selector-buttons {
+    font-weight: 600;
+    background-color: white;
+    border: none;
+}
+
+.selector-buttons:hover , .buttons:hover {
+    background-color: rgba(128, 128, 128, 0.571);  
+    }
+
+
+.buttons {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold; 
+}
+.icon-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons:hover {
+    box-shadow: none; 
+}

@@ -1,0 +1,61 @@
+
+
+  .rmdp-day.rmdp-range.start , .rmdp-day.rmdp-range , .rmdp-day.rmdp-range.end {
+    color: black;
+  
+  }
+  
+
+.rmdp-day-picker .rmdp-week .rmdp-day .sd:hover {
+    background-color: rgba(173, 216, 230, 0.482);
+    color: black;
+  }
+  
+  .rmdp-day.rmdp-today .sd {
+    color: black;
+    /* border: 3px dashed black; */
+    background-color:transparent
+  } 
+  
+  .rmdp-day.rmdp-range.start {
+    border-radius:20px 10px 10px 20px ;
+    background-color: rgb(173, 216, 230);
+  
+     
+  }
+  .rmdp-day.rmdp-range.end {
+    border-radius:10px 20px 20px 10px ;
+  }
+  
+  .rmdp-day.rmdp-range {
+    border-radius:10px 10px 10px 10px ;
+    background-color: rgba(173, 216, 230, 0.482);
+  
+  
+  }
+
+.rmdp-arrow-container.rmdp-right:hover , .rmdp-arrow-container.rmdp-left:hover, .rmdp-up:hover , .rmdp-down:hover
+{
+  background-color: lightblue;
+}
+  
+  .rmdp-arrow {
+    position:absolute;  top:2px
+  }
+  
+  .rmdp-day.rmdp-today.rmdp-selected span {
+    background-color: lightblue;
+  }
+  
+
+
+  .test-class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+
+    width: 200px;
+    /* height: 80px; */
+  }

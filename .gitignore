@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+todo
+*.pyc
+sitelog.log
+node_modules
+

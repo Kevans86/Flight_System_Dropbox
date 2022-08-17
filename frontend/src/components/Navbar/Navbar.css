@@ -1,0 +1,97 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+.navbar{
+  border: 1px solid  ;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
+  filter: brightness(1.2);
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+  color: white;
+
+}
+.navbar-brand
+{
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  
+}
+#logo-container {
+  margin-left: 10px;
+}
+
+
+#main-logo {
+  overflow: hidden;
+  border: 1px solid white ;
+  border-radius: 12px;
+  height: 61px;
+  margin-bottom: 0px;
+}
+
+/* custom icons */ 
+.justify-content-end {
+  font-size: large !important;
+}
+
+
+#user-container {
+  display: flex;
+  align-items: center;
+}
+
+
+#user-container:hover {
+  filter: brightness(1.5);
+}
+
+#user-icon{
+  display: flex;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 2px solid gray;
+  font-size: 150%;
+  border-radius: 5px 0px 0px 5px;
+  background-color: gray;
+  color: black;
+}
+
+#user-name{
+  display: flex;
+  align-items: center;
+  border: 2px solid gray;;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+
+#login-container {
+  background-image: linear-gradient(-180deg, #2781a8 0%, #166b90 100%);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+#login-container:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
