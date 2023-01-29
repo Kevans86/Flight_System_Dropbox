@@ -9,6 +9,7 @@
 /coverage
 
 # production
+dev_set.py
 
 # misc
 .DS_Store
