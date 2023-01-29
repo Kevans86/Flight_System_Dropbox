@@ -6,3 +6,4 @@ sitelog.log
 node_modules
 
 Flight_System/dev_set.py
+Flight_System/settings/dev_set.py
