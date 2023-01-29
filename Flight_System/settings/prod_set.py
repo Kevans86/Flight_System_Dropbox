@@ -13,7 +13,6 @@ DROPBOX_OAUTH2_REFRESH_TOKEN=os.environ.get('DROPBOX_OAUTH2_REFRESH_TOKEN')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-#ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'flightappkevinandeleanadropbox.herokuapp.com' ]
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'flight-system-dropbox.vercel.app' ]
 
