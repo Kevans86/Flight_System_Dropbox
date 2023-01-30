@@ -14,7 +14,7 @@ DROPBOX_OAUTH2_REFRESH_TOKEN=os.environ.get('DROPBOX_OAUTH2_REFRESH_TOKEN')
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.vercel.app' ]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'flight-system-dropbox.onrender.com' ]
 
 #Database
 #https://docs.djangoproject.com/en/4.0/ref/settings/#databases
