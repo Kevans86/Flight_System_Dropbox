@@ -1,1 +1,3 @@
 /venv
+/Flight_System\settings\dev_set.py
+.env
