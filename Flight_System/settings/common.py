@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 from datetime import timedelta
-#from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv, find_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -21,19 +21,13 @@ MEDIA_URL = ''
 MEDIA_ROOT = ''
 
 #Store ENV variables in .env file
-# dotenv_file = os.path.join(BASE_DIR, ".env")
-# 
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    load_dotenv(dotenv_file)
+load_dotenv(find_dotenv())
 
 # # Quick-start development settings - unsuitable for production
 # # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
-# # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-620w%=z3%fmo5vl=)bof1ot6+otsvtids=1sh0#vxt0i)+)uv2'
-
-# # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-
-# ALLOWED_HOSTS = []
 
 
 # Application definition
