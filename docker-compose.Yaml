@@ -7,7 +7,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     env_file:
-      ./Flight_system/.env
+        /.env
 
     ports:
       - 8000:8000
