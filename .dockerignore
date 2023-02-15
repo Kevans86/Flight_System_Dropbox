@@ -1,7 +1,6 @@
 venv
 Flight_System/settings/dev_set.py
 Flight_System/old_settings.py
-frontend/build
 frontend/node_modules
 .env
 fly.toml
