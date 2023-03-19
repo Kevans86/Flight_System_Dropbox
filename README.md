@@ -23,5 +23,5 @@ email: TestCustomer@test.com
 password: TestingC
 
 email: TestAdmin@test.com
-password: TestingD![image](https://user-images.githubusercontent.com/93340569/226168368-2bce2e02-6c6a-49e7-aa0d-d28a3cf02727.png)
+password: TestingD
 
