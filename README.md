@@ -1,5 +1,4 @@
 # Flight booking and management website.
-# it has JWT authentication 
 
 # Backend built in Pyhton Django using rest framework , Django filters , JWT  and dropbox integration for image storage  .
 # Front end built in ReactJS  
