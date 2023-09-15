@@ -5,8 +5,10 @@ sqllite used for DB.
 
 Dockerized and published to fly.io.
 
+!!! The app is down at the moment !!!
 App link:
   https://flight-system-dropbox.fly.dev/home
+  
 
 *The github page lacking secret keys 
 
