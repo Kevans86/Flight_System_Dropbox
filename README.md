@@ -8,7 +8,7 @@ Dockerized and published to fly.io.
 <b>!!! The app is down at the moment due to fly.io policy changes ,  looking for a new server to host it !!!</b>
 
 <s>App link:
-  https://flight-system-dropbox.fly.dev/home<s>
+  https://flight-system-dropbox.fly.dev/home</s>
 
 USERS:
 
